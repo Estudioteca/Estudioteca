@@ -470,3 +470,97 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+        }
+        .card .button {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: var(--primary-color);
+            padding: 10px 20px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .card .button:hover {
+            background-color: #45a049;
+        }
+
+        /* Pie de Página */
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav>
+        <div class="logo">
+            <a href="#inicio"><img src="https://cdn-icons-png.flaticon.com/512/1308/1308757.png" alt="CampusHub" style="height: 40px;"></a>
+        </div>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#recursos">Recursos</a></li>
+            <li><a href="#foros">Foros</a></li>
+            <li><a href="#grupos">Grupos de Estudio</a></li>
+            <li><a href="#herramientas">Herramientas</a></li>
+            <li><a href="#cuenta">Mi Cuenta</a></li>
+            <li><a href="#ayuda">Ayuda</a></li>
+        </ul>
+    </nav>
+
+    <!-- Página de Inicio -->
+    <header id="inicio">
+        <h1>Bienvenido a CampusHub</h1>
+        <p>El mejor lugar para encontrar y compartir recursos educativos universitarios.</p>
+        <a href="#recursos" class="button">Explorar Recursos</a>
+    </header>
+
+    <!-- Sección de Recursos -->
+    <section id="recursos" class="content-section">
+        <h2>Recursos Destacados</h2>
+        <div class="content-grid">
+            <!-- Ejemplos de recursos -->
+            <div class="card">
+                <h3>Notas de Clase</h3>
+                <p>Accede a notas detalladas de diferentes materias.</p>
+                <a href="#" class="button">Ver Más</a>
+            </div>
+            <div class="card">
+                <h3>Artículos de Investigación</h3>
+                <p>Encuentra artículos revisados por expertos en varios campos de estudio.</p>
+                <a href="#" class="button">Ver Más</a>
+            </div>
+            <div class="card">
+                <h3>Tutoriales y Guías</h3>
+                <p>Guías paso a paso y tutoriales para facilitar tu aprendizaje.</p>
+                <a href="#" class="button">Ver Más</a>
+            </div>
+            <div class="card">
+                <h3>Simulaciones y Cuestionarios</h3>
+                <p>Practica y evalúa tus conocimientos con herramientas interactivas.</p>
+                <a href="#" class="button">Ver Más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Interacción -->
+    <section id="foros" class="content-section">
+        <h2>Interacción y Colaboración</h2>
+        <div class="content-grid">
+            <!-- Ejemplos de interacción -->
+            <div class="card">
+                <h3>Foros de Discusión</h3>
+                <p>Únete a la conversación y comparte tus ideas con otros estudiantes.</p>
+                <a href="#" class="button">Participar</a>
+            </div>
+            <div class="card">
+                <
