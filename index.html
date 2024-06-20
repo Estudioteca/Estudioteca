@@ -340,3 +340,133 @@
     </footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusHub - Tu Centro de Recursos Universitarios</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1308/1308757.png" type="image/png">
+    <style>
+        /* Fuentes y colores */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #002147;
+            --background-color: #f9f9f9;
+            --text-color: #333;
+            --header-height: 60px;
+        }
+
+        /* Estilos Generales */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            scroll-behavior: smooth;
+        }
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: var(--secondary-color);
+        }
+        h1, h2, h3 {
+            color: var(--secondary-color);
+        }
+
+        /* Barra de Navegación */
+        nav {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: var(--primary-color);
+            border-radius: 5px;
+        }
+
+        /* Sección de Hero */
+        header {
+            background: url('https://source.unsplash.com/featured/?university,education') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 200px 20px;
+            position: relative;
+            margin-top: var(--header-height);
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+        header h1, header p, header a {
+            position: relative;
+            z-index: 1;
+        }
+        header .button {
+            background-color: var(--primary-color);
+            padding: 15px 30px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        header .button:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+
+        /* Secciones de Contenido */
+        .content-section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+        .content-section h2 {
+            margin-bottom: 20px;
+        }
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
