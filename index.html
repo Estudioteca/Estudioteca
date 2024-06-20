@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro de Recursos Académicos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Centro de Recursos Académicos</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#articulos">Artículos</a></li>
+          <li><a href="#revistas">Revistas</a></li>
+          <li><a href="#libros">Libros</a></li>
+          <li><a href="#tesis">Tesis</a></li>
+          <li><a href="#recursos">Recursos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section id="inicio">
+    <div class="container">
+      <h2>Bienvenido al Centro de Recursos Académicos</h2>
+      <form action="/buscar" method="GET">
+        <input type="text" name="query" placeholder="Buscar artículos, libros, tesis...">
+        <button type="submit">Buscar</button>
+      </form>
+      <div class="destacados">
+        <!-- Aquí van los artículos, libros o tesis destacadas -->
+      </div>
+      <div class="categorias">
+        <!-- Aquí van las categorías populares -->
+      </div>
+    </div>
+  </section>
+  
+  <!-- Más secciones para artículos, revistas, libros, tesis, recursos -->
 
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Centro de Recursos Académicos</p>
+    </div>
+  </footer>
+</body>
+</html>
